@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bim2bgbiyfmyb"]
+
+[ext_resource type="PackedScene" uid="uid://c2gnh0cwkda2x" path="res://scenes/character.tscn" id="1_uwrxv"]
+[ext_resource type="Script" uid="uid://bw4b65jlpnh1n" path="res://scenes/game.gd" id="1_yqjtg"]
+
+[node name="Game" type="Node2D" unique_id=838257290]
+script = ExtResource("1_yqjtg")
+
+[node name="character" parent="." unique_id=1716504918 instance=ExtResource("1_uwrxv")]
+visible = false
+position = Vector2(507, 235)
+
+[node name="CharactersContainer" type="HBoxContainer" parent="." unique_id=1897153884]
+custom_minimum_size = Vector2(1, 1)
+anchors_preset = -1
+offset_left = 100.0
+offset_top = 300.0
+offset_right = 140.0
+offset_bottom = 340.0

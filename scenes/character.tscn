@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c2gnh0cwkda2x"]
+
+[ext_resource type="Texture2D" uid="uid://b7hmwb6ufs3ss" path="res://assets/moufete.PNG" id="1_agfs1"]
+[ext_resource type="Script" uid="uid://bmy1clwn66fmt" path="res://scenes/character.gd" id="1_rkhd4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(1153, 1208)
+
+[node name="character" type="Area2D" unique_id=1716504918]
+script = ExtResource("1_rkhd4")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1366880622]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_agfs1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1364863410]
+position = Vector2(-54.5, -135)
+shape = SubResource("RectangleShape2D_g4v7s")
+debug_color = Color(0.78570575, 0.39511815, 0.4774316, 0.41960785)

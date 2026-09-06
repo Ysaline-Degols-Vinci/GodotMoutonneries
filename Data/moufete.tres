@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3 uid="uid://2ocxx7bx25dy"]
+
+[ext_resource type="Script" uid="uid://bh4fthkh3udjr" path="res://Data/CharacterData.gd" id="1_djk8v"]
+[ext_resource type="Texture2D" uid="uid://b7hmwb6ufs3ss" path="res://assets/moufete.PNG" id="1_ngr0e"]
+
+[resource]
+script = ExtResource("1_djk8v")
+character_name = "Moufête"
+image = ExtResource("1_ngr0e")
+production = 1.0
+time_to_produce = 5.0
+metadata/_custom_type_script = "uid://bh4fthkh3udjr"
