@@ -10,10 +10,17 @@ script = ExtResource("1_yqjtg")
 visible = false
 position = Vector2(507, 235)
 
-[node name="CharactersContainer" type="HBoxContainer" parent="." unique_id=1897153884]
-custom_minimum_size = Vector2(1, 1)
-anchors_preset = -1
-offset_left = 100.0
-offset_top = 300.0
-offset_right = 140.0
-offset_bottom = 340.0
+[node name="Slot1" type="Node2D" parent="." unique_id=55477117]
+position = Vector2(190, 312)
+
+[node name="Slot2" type="Node2D" parent="." unique_id=287291714]
+position = Vector2(596, 272)
+
+[node name="Slot3" type="Node2D" parent="." unique_id=1571852581]
+position = Vector2(939, 323)
+
+[node name="Slot4" type="Node2D" parent="." unique_id=1939178650]
+position = Vector2(837, 474)
+
+[node name="Slot5" type="Node2D" parent="." unique_id=1363493029]
+position = Vector2(440, 482)

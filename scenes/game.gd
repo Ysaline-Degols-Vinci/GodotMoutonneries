@@ -3,10 +3,17 @@ extends Node2D
 var character_scene = preload("res://scenes/character.tscn")
 
 func _ready():
+	var slot_number = 1
+	
 	for character_state in GameData.characters:
 		
 		var character = character_scene.instantiate()
 		
 		character.setup(character_state.data)
 		
-		$CharactersContainer.add_child(character)
+		var slot = get_node("Slot" + str(slot_number))
+		character.position = slot.position
+		
+		add_child(character)
+		
+		slot_number += 1
