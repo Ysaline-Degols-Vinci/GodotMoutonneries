@@ -6,7 +6,8 @@ func _ready():
 	var slot_number = 1
 	
 	for character_state in GameData.characters:
-		
+		if not character_state.active:
+			continue
 		var character = character_scene.instantiate()
 		
 		character.setup(character_state.data)
