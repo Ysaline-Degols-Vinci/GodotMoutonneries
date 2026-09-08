@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://c27mdgdqvem6w"]
 
 [ext_resource type="Script" uid="uid://n3wp8gm1qtq8" path="res://scenes/shop_character.gd" id="1_srvng"]
+[ext_resource type="Shader" uid="uid://ceofnsksbj04b" path="res://scenes/shop_character.gdshader" id="2_tn4ll"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_th8rk"]
+shader = ExtResource("2_tn4ll")
 
 [node name="ShopCharacter" type="Control" unique_id=1533651685]
 custom_minimum_size = Vector2(20, 20)
@@ -22,6 +26,7 @@ offset_right = 394.0
 offset_bottom = 429.0
 
 [node name="Image" type="TextureRect" parent="VBoxContainer" unique_id=840285527]
+material = SubResource("ShaderMaterial_th8rk")
 custom_minimum_size = Vector2(300, 300)
 layout_mode = 2
 size_flags_horizontal = 4

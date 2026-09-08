@@ -17,3 +17,11 @@ offset_right = 40.0
 offset_bottom = 40.0
 theme_override_constants/h_separation = 200
 columns = 3
+
+[node name="ButtonGame" type="Button" parent="." unique_id=932706727]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Retour"
+
+[connection signal="pressed" from="ButtonGame" to="." method="_on_button_game_pressed"]
