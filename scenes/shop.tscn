@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://ba7so4521p8on"]
+
+[ext_resource type="Script" uid="uid://cyopbpdwmu2gf" path="res://scenes/shop.gd" id="1_lx5au"]
+
+[node name="Shop" type="Control" unique_id=2107228585]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lx5au")
+
+[node name="CharacterGrid" type="GridContainer" parent="." unique_id=1624018626]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/h_separation = 200
+columns = 3

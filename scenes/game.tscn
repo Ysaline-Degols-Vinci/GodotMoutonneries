@@ -24,3 +24,10 @@ position = Vector2(837, 474)
 
 [node name="Slot5" type="Node2D" parent="." unique_id=1363493029]
 position = Vector2(440, 482)
+
+[node name="ShopButton" type="Button" parent="." unique_id=1963727037]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Boutique"
+
+[connection signal="pressed" from="ShopButton" to="." method="_on_shop_button_pressed"]
