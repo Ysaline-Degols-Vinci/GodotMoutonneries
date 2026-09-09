@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3 uid="uid://bdh7rgiwasbld"]
+
+[ext_resource type="Texture2D" uid="uid://brfqe752643da" path="res://assets/Toutouton.PNG" id="1_3bara"]
+[ext_resource type="Script" uid="uid://bh4fthkh3udjr" path="res://Data/CharacterData.gd" id="1_fmhtw"]
+
+[resource]
+script = ExtResource("1_fmhtw")
+character_name = "Toutouton"
+image = ExtResource("1_3bara")
+metadata/_custom_type_script = "uid://bh4fthkh3udjr"

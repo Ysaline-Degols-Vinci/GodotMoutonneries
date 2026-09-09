@@ -7,7 +7,6 @@
 script = ExtResource("1_dqf6j")
 character_name = "Morton"
 image = ExtResource("1_th8rk")
-price_ticket = 10
 production = 10.0
 time_to_produce = 20.0
 metadata/_custom_type_script = "uid://bh4fthkh3udjr"

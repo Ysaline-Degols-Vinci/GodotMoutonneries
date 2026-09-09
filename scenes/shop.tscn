@@ -11,17 +11,26 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_lx5au")
 
-[node name="CharacterGrid" type="GridContainer" parent="." unique_id=1624018626]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-theme_override_constants/h_separation = 200
-columns = 3
-
 [node name="ButtonGame" type="Button" parent="." unique_id=932706727]
 layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 text = "Retour"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=281411827]
+custom_minimum_size = Vector2(800, 200)
+layout_mode = 0
+offset_left = 37.0
+offset_top = 48.0
+offset_right = 1109.0
+offset_bottom = 618.0
+vertical_scroll_mode = 2
+
+[node name="CharacterGrid" type="GridContainer" parent="ScrollContainer" unique_id=1624018626]
+custom_minimum_size = Vector2(1000, 1500)
+layout_mode = 2
+theme_override_constants/h_separation = 200
+theme_override_constants/v_separation = 380
+columns = 3
 
 [connection signal="pressed" from="ButtonGame" to="." method="_on_button_game_pressed"]

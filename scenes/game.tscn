@@ -2,32 +2,38 @@
 
 [ext_resource type="PackedScene" uid="uid://c2gnh0cwkda2x" path="res://scenes/character.tscn" id="1_uwrxv"]
 [ext_resource type="Script" uid="uid://bw4b65jlpnh1n" path="res://scenes/game.gd" id="1_yqjtg"]
+[ext_resource type="Texture2D" uid="uid://dguucn77nccfc" path="res://assets/herbe.png" id="3_lnu2h"]
 
 [node name="Game" type="Node2D" unique_id=838257290]
 script = ExtResource("1_yqjtg")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1941091366]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("3_lnu2h")
 
 [node name="character" parent="." unique_id=1716504918 instance=ExtResource("1_uwrxv")]
 visible = false
 position = Vector2(507, 235)
 
 [node name="Slot1" type="Node2D" parent="." unique_id=55477117]
-position = Vector2(190, 312)
+position = Vector2(168, 242)
 
 [node name="Slot2" type="Node2D" parent="." unique_id=287291714]
-position = Vector2(596, 272)
+position = Vector2(800, 199)
 
 [node name="Slot3" type="Node2D" parent="." unique_id=1571852581]
-position = Vector2(939, 323)
+position = Vector2(633, 402)
 
 [node name="Slot4" type="Node2D" parent="." unique_id=1939178650]
-position = Vector2(837, 474)
+position = Vector2(1012, 363)
 
 [node name="Slot5" type="Node2D" parent="." unique_id=1363493029]
-position = Vector2(440, 482)
+position = Vector2(394, 571)
 
 [node name="ShopButton" type="Button" parent="." unique_id=1963727037]
-offset_right = 8.0
-offset_bottom = 8.0
+offset_right = 79.0
+offset_bottom = 31.0
 text = "Boutique"
 
 [connection signal="pressed" from="ShopButton" to="." method="_on_shop_button_pressed"]

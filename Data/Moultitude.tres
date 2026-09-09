@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3 uid="uid://b3iowvdo4st7l"]
+
+[ext_resource type="Texture2D" uid="uid://crt0e5rto4825" path="res://assets/Moultitude.PNG" id="1_21ti6"]
+[ext_resource type="Script" uid="uid://bh4fthkh3udjr" path="res://Data/CharacterData.gd" id="1_vn6dr"]
+
+[resource]
+script = ExtResource("1_vn6dr")
+character_name = "Moultitude"
+image = ExtResource("1_21ti6")
+metadata/_custom_type_script = "uid://bh4fthkh3udjr"
